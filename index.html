@@ -1,6 +1,6 @@
 <html>
 <head>
-<META http-equiv="refresh" content="0;URL=https://fb-events-api.azurewebsites.net/api/events/zygeiviai">
+<!--<META http-equiv="refresh" content="0;URL=https://fb-events-api.azurewebsites.net/api/events/zygeiviai">-->
 </head>
 <body>
 <h1>Kaip pridėti VUŽK įvykius iš Veidaknygės į Google kalendorių</h1>
@@ -13,4 +13,32 @@
         <li>Matome VUŽK kalendorių prie 'kiti kalendoriai'. Jei nematome, rašome <a href="mailto:dainius.kavoliunas@gmail.com">dainius.kavoliunas@gmail.com</a</li>
     </ol>
 </body>
+    <script>
+       
+            // Opera 8.0+
+            var isOpera = (!!window.opr && !!opr.addons) || !!window.opera || navigator.userAgent.indexOf(' OPR/') >= 0;
+
+            // Firefox 1.0+
+            var isFirefox = typeof InstallTrigger !== 'undefined';
+
+            // Safari 3.0+ "[object HTMLElementConstructor]" 
+            var isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || (typeof safari !== 'undefined' && safari.pushNotification));
+
+            // Internet Explorer 6-11
+            var isIE = /*@cc_on!@*/false || !!document.documentMode;
+
+            // Edge 20+
+            var isEdge = !isIE && !!window.StyleMedia;
+
+            // Chrome 1+
+            var isChrome = !!window.chrome && !!window.chrome.webstore;
+
+            // Blink engine detection
+            var isBlink = (isChrome || isOpera) && !!window.CSS;
+        
+            if(!isOpera && !isFirefox && !isSafari && !isIE && !isEdge && !isChrome && !isBlink){
+                window.location.href = "https://fb-events-api.azurewebsites.net/api/events/zygeiviai";
+            }
+        
+    </script>
 </html>
